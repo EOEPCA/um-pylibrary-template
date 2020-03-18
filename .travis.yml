@@ -16,7 +16,7 @@ deploy:
   password: $TOKEN_PYPI
   on:
     all_branches: true
-    tags: false
+    tags: true
   skip_existing: true
 
 #notifications:
