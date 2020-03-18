@@ -1,16 +1,8 @@
 <!--
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** template-svce, twitter_handle, email
+*** um-pylibrary-template, PyLibraryTemplate
 -->
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -21,60 +13,46 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/EOEPCA/template-svce">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/EOEPCA/um-pylibrary-template">
   </a>
 
-  <h3 align="center">template-service</h3>
+  <h3 align="center">PyLibraryTemplate</h3>
 
   <p align="center">
-    Template for developing an EOEPCA Service
+    Template for developing an EOEPCA Library
     <br />
-    <a href="https://github.com/EOEPCA/template-svce"><strong>Explore the docs »</strong></a>
-    <br />
-    <a href="https://github.com/EOEPCA/template-svce">View Demo</a>
+    <a href="https://github.com/EOEPCA/um-pylibrary-template"><strong>Explore the docs</strong></a>
+    .
+    <a href="https://github.com/EOEPCA/um-pylibrary-template/issues">Report Bug</a>
     ·
-    <a href="https://github.com/EOEPCA/template-svce/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/EOEPCA/template-svce/issues">Request Feature</a>
+    <a href="https://github.com/EOEPCA/um-pylibrary-template/issues">Request Feature</a>
   </p>
 </p>
 
-<!-- TABLE OF CONTENTS -->
-
 ## Table of Contents
 
-- [About the Project](#about-the-project)
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
   - [Built With](#built-with)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Testing](#testing)
-- [Documentation](#documentation)
-- [Usage](#usage)
+- [Documentation & Usage](#documentation--usage)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
-<!-- ABOUT THE PROJECT -->
-
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`template-svce`, `twitter_handle`, `email`
 
 ### Built With
 
-- [Javalin framework](https://javalin.io/)
-- [Log4j2](https://logging.apache.org/log4j/2.x/) + [YAML](https://yaml.org/)
-- [Junit 5](https://junit.org/junit5/)
-
-<!-- GETTING STARTED -->
+- [Python](https://www.python.org//)
+- [PyTest](https://docs.pytest.org)
+- [YAML](https://yaml.org/)
+- [Travis CI](https://travis-ci.com/)
 
 ## Getting Started
 
@@ -84,70 +62,30 @@ To get a local copy up and running follow these simple steps.
 
 This is an example of how to list things you need to use the software and how to install them.
 
-- [Vagrant](https://www.vagrantup.com/docs/installation/)
-- [EOEPCA Development Environment](https://github.com/EOEPCA/dev-env)
+- [Python 3](https://www.python.org//)
+- [Pip](https://pip.pypa.io/en/stable/)
 
 ### Installation
 
-1. Get into EOEPCA's development environment
+Just download the library using pip
 
 ```sh
-vagrant ssh
-```
-
-3. Clone the repo
-
-```sh
-git clone https://github.com/EOEPCA/template-svce.git
-```
-
-4. Change local directory
-
-```sh
-cd template-service
+pip install PyLibraryTemplate
 ```
 
 ### Testing
 
-- `./gradlew build` runs only the unit tests
-- `./gradlew integrationTest` runs only the integration tests (it compiles all source code beforehand). It does not package or deploy a build.
-  This is assumed to have been done in a prior build pipeline step.
-
-## Documentation
-
-The component documentation can be found at https://eoepca.github.io/template-svce/.
-
-<!-- USAGE EXAMPLES -->
-
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-### Running the template service
-
-Just execute the run task in Gradle
-
 ```sh
-./gradlew run
+pytest PyLibraryTemplate/tests
 ```
 
-### Upgrading Gradle Wrapper
+## Documentation & Usage
 
-Change the version number in the `build.gradle` wrapper task then run:
-
-```sh
-./gradlew wrapper --gradle-version=4.10.2 --distribution-type=bin
-```
-
-<!-- ROADMAP -->
+The component documentation can be found at https://eoepca.github.io/um-pylibrary-template/.
 
 ## Roadmap
 
-See the [open issues](https://github.com/EOEPCA/template-svce/issues) for a list of proposed features (and known issues).
-
-<!-- CONTRIBUTING -->
+See the [open issues](https://github.com/EOEPCA/um-pylibrary-template/issues) for a list of proposed features (and known issues).
 
 ## Contributing
 
@@ -159,40 +97,29 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<!-- LICENSE -->
-
 ## License
 
 Distributed under the Apache-2.0 License. See `LICENSE` for more information.
 
-<!-- CONTACT -->
-
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+[EOEPCA mailbox](eoepca.systemteam@telespazio.com)
 
-Project Link: [https://github.com/EOEPCA/template-svce](https://github.com/EOEPCA/template-svce)
-
-<!-- ACKNOWLEDGEMENTS -->
+Project Link: [https://github.com/EOEPCA/um-pylibrary-template](https://github.com/EOEPCA/um-pylibrary-template)
 
 ## Acknowledgements
 
-- []()
-- []()
 - README.md is based on [this template](https://github.com/othneildrew/Best-README-Template) by [Othneil Drew](https://github.com/othneildrew).
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/EOEPCA/template-svce.svg?style=flat-square
-[contributors-url]: https://github.com/EOEPCA/template-svce/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/EOEPCA/template-svce.svg?style=flat-square
-[forks-url]: https://github.com/EOEPCA/template-svce/network/members
-[stars-shield]: https://img.shields.io/github/stars/EOEPCA/template-svce.svg?style=flat-square
-[stars-url]: https://github.com/EOEPCA/template-svce/stargazers
-[issues-shield]: https://img.shields.io/github/issues/EOEPCA/template-svce.svg?style=flat-square
-[issues-url]: https://github.com/EOEPCA/template-svce/issues
-[license-shield]: https://img.shields.io/github/license/EOEPCA/template-svce.svg?style=flat-square
-[license-url]: https://github.com/EOEPCA/template-svce/blob/master/LICENSE
-[build-shield]: https://www.travis-ci.com/EOEPCA/template-svce.svg?branch=master
-[product-screenshot]: images/screenshot.png
+[contributors-shield]: https://img.shields.io/github/contributors/EOEPCA/um-pylibrary-template.svg?style=flat-square
+[contributors-url]: https://github.com/EOEPCA/um-pylibrary-template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/EOEPCA/um-pylibrary-template.svg?style=flat-square
+[forks-url]: https://github.com/EOEPCA/um-pylibrary-template/network/members
+[stars-shield]: https://img.shields.io/github/stars/EOEPCA/um-pylibrary-template.svg?style=flat-square
+[stars-url]: https://github.com/EOEPCA/um-pylibrary-template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/EOEPCA/um-pylibrary-template.svg?style=flat-square
+[issues-url]: https://github.com/EOEPCA/um-pylibrary-template/issues
+[license-shield]: https://img.shields.io/github/license/EOEPCA/um-pylibrary-template.svg?style=flat-square
+[license-url]: https://github.com/EOEPCA/um-pylibrary-template/blob/master/LICENSE
+[build-shield]: https://www.travis-ci.com/EOEPCA/um-pylibrary-template.svg?branch=master
