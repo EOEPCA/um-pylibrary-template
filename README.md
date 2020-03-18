@@ -38,8 +38,7 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Testing](#testing)
-- [Documentation](#documentation)
-- [Usage](#usage)
+- [Documentation & Usage](#documentation--usage)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
@@ -80,15 +79,9 @@ pip install PyLibraryTemplate
 pytest PyLibraryTemplate/tests
 ```
 
-## Documentation
+## Documentation & Usage
 
 The component documentation can be found at https://eoepca.github.io/um-pylibrary-template/.
-
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Roadmap
 
