@@ -1,32 +1,22 @@
 language: python
 python: 3.6.9
 
-env:
-  DOCKER_COMPOSE_VERSION: 1.25.4
-services:
-  - docker
-
 jobs:
   include:
     - stage: Testing
-      install: pip install -r src/requirements.txt
-      script: pytest src
-
-    - stage: container creation and publishing
-      install: skip
-      script: travis/containerCreation.sh um-service-template
-
-    - stage: smoke and acceptance test
-      install: skip # without this there's a `git clone` executed!
-      script: travis/acceptanceTest.sh um-service-template 8080 7000 # Service name + external port + internal port for docker
-
-    - stage: release
-      if: branch = master AND NOT type IN (pull_request)
-      install: skip
-      script: travis/release.sh um-service-template
+      install: pip install -r PyLibraryTemplate/requirements.txt
+      script: pytest PyLibraryTemplate/tests
 
 import:
   - docs/.travis.yml
+
+deploy:
+  provider: pypi
+  user: "__token__"
+  password: $TOKEN_PYPI
+  on:
+    tags: true
+  skip_existing: true
 
 #notifications:
 #  slack: eoepca:Msk9hjQKAbwSYcVWiepenPim
