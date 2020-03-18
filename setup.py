@@ -1,9 +1,9 @@
-from distutils.core import setup
+import setuptools
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-setup(
+setuptools.setup(
   name = 'EOEPCA-PyLibraryTemplate',         # How you named your package folder (MyLibrary)
   version = '0.0.1',      # Start with a small number and increase it with every change you make
   author = 'EOEPCA',
