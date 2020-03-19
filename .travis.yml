@@ -7,9 +7,6 @@ jobs:
       install: pip install -r PyLibraryTemplate/requirements.txt
       script: pytest PyLibraryTemplate/tests
 
-import:
-  - docs/.travis.yml
-
 deploy:
   provider: pypi
   user: "__token__"
